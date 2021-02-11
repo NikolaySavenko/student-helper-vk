@@ -1,0 +1,12 @@
+{
+  "name": "VKGroupBot",
+  "description": "Demo VK group bot on ASP.NET Core",
+  "repository": "https://github.com/NikolaySavenko/student-helper-vk",
+  "keywords": ["aspnet", "core"],
+  "stack": "heroku-20",
+  "buildpacks": [
+    {
+      "url": "https://github.com/jincod/dotnetcore-buildpack"
+    }
+  ]
+}
