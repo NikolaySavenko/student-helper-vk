@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -33,12 +34,28 @@ namespace VKGroupBot.Controllers {
 					var message = JsonConvert.DeserializeObject<Message>(msgObject.ToString());
 
 					// Heroku dyno wake up for 10 secs and at this time vk make retry
-					if (!Request.Headers.Keys.Contains("X-Retry-Counter"))
-						_vkApi.Messages.Send(new MessagesSendParams {
-							RandomId = new DateTime().Millisecond,
-							PeerId = message.PeerId.Value,
-							Message = message.Text
-						});
+					if (!Request.Headers.Keys.Contains("X-Retry-Counter")) {
+						// Temporary
+						if (message.Text == "/links") {
+							using (var db = new PostgresContext()) {
+								var links = db.Links.ToList();
+								foreach (var link in links) {
+									_vkApi.Messages.Send(new MessagesSendParams {
+										RandomId = new DateTime().Millisecond,
+										PeerId = message.PeerId.Value,
+										Message = link.SubjectName
+									});
+								}
+							}
+						}
+						else {
+							_vkApi.Messages.Send(new MessagesSendParams {
+								RandomId = new DateTime().Millisecond,
+								PeerId = message.PeerId.Value,
+								Message = message.Text
+							});
+						}
+					}
 					break;
 			}
 
