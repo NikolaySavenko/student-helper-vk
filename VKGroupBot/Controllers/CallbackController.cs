@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Text;
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -14,10 +15,12 @@ namespace VKGroupBot.Controllers {
 	public class CallbackController : ControllerBase {
 		private readonly IConfiguration _configuration;
 		private readonly IVkApi _vkApi;
+		private readonly MessageCommandFactory commandFactory;
 
 		public CallbackController(IVkApi vkApi, IConfiguration configuration) {
 			_vkApi = vkApi;
 			_configuration = configuration;
+			commandFactory = new MessageCommandFactory(vkApi);
 		}
 
 		[HttpPost]
@@ -35,26 +38,8 @@ namespace VKGroupBot.Controllers {
 
 					// Heroku dyno wake up for 10 secs and at this time vk make retry
 					if (!Request.Headers.Keys.Contains("X-Retry-Counter")) {
-						// Temporary
-						if (message.Text == "/links") {
-							using (var db = new PostgresContext()) {
-								var links = db.Links.ToList();
-								foreach (var link in links) {
-									_vkApi.Messages.Send(new MessagesSendParams {
-										RandomId = new DateTime().Millisecond,
-										PeerId = message.PeerId.Value,
-										Message = link.SubjectName
-									});
-								}
-							}
-						}
-						else {
-							_vkApi.Messages.Send(new MessagesSendParams {
-								RandomId = new DateTime().Millisecond,
-								PeerId = message.PeerId.Value,
-								Message = message.Text
-							});
-						}
+						var command = commandFactory.CreateCommand(message);
+						command.Execute();
 					}
 					break;
 			}
