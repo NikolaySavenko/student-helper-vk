@@ -1,13 +1,14 @@
 ﻿using System;
-using System.Linq;
-using System.Text;
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using VkNet.Abstractions;
+using VkNet.Enums.SafetyEnums;
 using VkNet.Model;
+using VkNet.Model.GroupUpdate;
 using VkNet.Model.RequestParams;
+using VkNet.Utils;
 
 namespace VKGroupBot.Controllers {
 	[Route("api/[controller]")]
@@ -26,22 +27,31 @@ namespace VKGroupBot.Controllers {
 		[HttpPost]
 		public IActionResult Callback([FromBody] JsonElement body) {
 			var response = "ok";
-			var type = body.GetProperty("type").GetString();
 
-			switch (type) {
-				case "confirmation":
+			// Heroku dyno wake up for 10 secs and at this time vk make retry
+			if (!Request.Headers.Keys.Contains("X-Retry-Counter")) {
+				var jToken = JToken.Parse(body.ToString());
+				var vkResponse = new VkResponse(jToken);
+				var update = GroupUpdate.FromJson(vkResponse);
+				if (update.Type == GroupUpdateType.Confirmation) {
 					response = Environment.GetEnvironmentVariable("vk_response");
-					break;
-				case "message_new":
-					var msgObject = body.GetProperty("object").GetProperty("message");
-					var message = JsonConvert.DeserializeObject<Message>(msgObject.ToString());
-
-					// Heroku dyno wake up for 10 secs and at this time vk make retry
-					if (!Request.Headers.Keys.Contains("X-Retry-Counter")) {
-						var command = commandFactory.CreateCommand(message);
-						command.Execute();
-					}
-					break;
+				}
+				else if (update.Type == GroupUpdateType.MessageNew) {
+					var messageNew = update.MessageNew;
+					var message = messageNew.Message;
+					var command = commandFactory.CreateCommand(message);
+					command.Execute();
+				}
+				else if (update.Type == GroupUpdateType.MessageEvent) {
+					var messageEvent = update.MessageEvent;
+					var payloadData = JToken.Parse(messageEvent.Payload);
+					var chosen = (string)payloadData["action"];
+					_vkApi.Messages.Edit(new MessageEditParams {
+						PeerId = messageEvent.PeerId.Value,
+						Message = $"Your destiny {chosen}.",
+						ConversationMessageId = messageEvent.ConversationMessageId
+					});
+				}
 			}
 
 			return Ok(response);

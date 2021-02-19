@@ -12,8 +12,10 @@ namespace VKGroupBot.Controllers {
 
 		public ICommand CreateCommand(Message message) {
 			switch (message.Text.Split()[0]) {
-				case "/zoom":
+				case ZoomLinkCommand.CommandStart:
 					return new ZoomLinkCommand(message, _sender);
+				case TimetableCommand.CommandStart:
+					return new TimetableCommand(message, _sender);
 				default:
 					return new EmptyMessageCommand(message, _sender);
 			}

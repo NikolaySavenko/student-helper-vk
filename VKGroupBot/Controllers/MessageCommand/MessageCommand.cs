@@ -1,4 +1,5 @@
 ﻿using VkNet.Model;
+using VkNet.Model.Keyboard;
 
 namespace VKGroupBot.Controllers {
 	public abstract class MessageCommand: ICommand {
@@ -14,10 +15,14 @@ namespace VKGroupBot.Controllers {
 			_sender.Send(text, PeerId);
 		}
 
+		protected void SendMessage(string text, MessageKeyboard keyboard) {
+			_sender.Send(text, keyboard, PeerId);
+		}
+
 		public MessageCommandType Type { get; protected set; }
 		public long? PeerId { get; private set; }
 		public string Text { get; private set; }
 		public string Params { get; protected set; }
-		private readonly IMessageSender _sender;
+		protected readonly IMessageSender _sender;
 	}
 }
