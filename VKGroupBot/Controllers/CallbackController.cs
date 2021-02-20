@@ -2,6 +2,7 @@
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using VkNet.Abstractions;
 using VkNet.Enums.SafetyEnums;
@@ -44,13 +45,17 @@ namespace VKGroupBot.Controllers {
 				}
 				else if (update.Type == GroupUpdateType.MessageEvent) {
 					var messageEvent = update.MessageEvent;
-					var payloadData = JToken.Parse(messageEvent.Payload);
-					var chosen = (string)payloadData["action"];
-					_vkApi.Messages.Edit(new MessageEditParams {
-						PeerId = messageEvent.PeerId.Value,
-						Message = $"Your destiny {chosen}.",
-						ConversationMessageId = messageEvent.ConversationMessageId
-					});
+					var payload = JsonConvert.DeserializeObject<ButtonPayload>(messageEvent.Payload);
+					if (payload.CommandController == TimetableCommand.CommandStart) {
+						var timetable = TimetableCommand.Factory.MakeTimetable(payload);
+						timetable.Action(payload);
+						_vkApi.Messages.Edit(new MessageEditParams {
+							PeerId = messageEvent.PeerId.Value,
+							Message = timetable.ToString(),
+							ConversationMessageId = messageEvent.ConversationMessageId,
+							Keyboard = timetable.BuildKeyboard()
+						});
+					}
 				}
 			}
 

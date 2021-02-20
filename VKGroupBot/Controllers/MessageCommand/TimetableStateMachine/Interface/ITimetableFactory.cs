@@ -1,5 +1,5 @@
 ﻿namespace VKGroupBot.Controllers.TimetableStateMachine {
 	public interface ITimetableFactory {
-		public ITimeTableMachine MakeTimetable();
+		public ITimeTableMachine MakeTimetable(ButtonPayload buttonPayload = null);
 	}
 }

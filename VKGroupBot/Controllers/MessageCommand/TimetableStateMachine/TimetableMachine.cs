@@ -1,43 +1,36 @@
-﻿using System.Collections.Generic;
-using VkNet.Enums.SafetyEnums;
+﻿using VKGroupBot.Controllers.TimetableStateMachine.States;
 using VkNet.Model.Keyboard;
 
 namespace VKGroupBot.Controllers.TimetableStateMachine {
 	public class TimetableMachine : ITimeTableMachine {
-		private ITimetableState _state;
-
-		private Dictionary<string, string> ru2enWeekDay = new Dictionary<string, string>() {
-			{"Пн","mon"},
-			{"Вт","tue"},
-			{"Ср","wed"},
-			{"Чт","thu"},
-			{"Пт","fri"},
-			{"Сб","sat"}
-		};
-
 		public TimetableMachine(ITimetableState state) {
-			_state = state;
+			State = state;
 		}
 
-		public MessageKeyboard BuildKeyboard() {
-			var builder = new KeyboardBuilder(false);
-			builder.SetInline();
-
-			int i = 0;
-			foreach (var day in ru2enWeekDay.Keys) {
-				var action = new MessageKeyboardButtonAction {
-					Type = KeyboardButtonActionType.Callback,
-					Label = day,
-					Payload = $"{{\"action\": \"getDay_{ru2enWeekDay[day]}\"}}"
-				};
-				builder.AddButton(action, KeyboardButtonColor.Positive);
-				if (i % 2 == 1)
-					builder.AddLine();
-				i++;
+		public TimetableMachine(ButtonPayload buttonPayload) {
+			if (buttonPayload != null) {
+				switch (buttonPayload.Stage) {
+					case TimetableWeekState.name:
+						State = new TimetableWeekState(this);
+						break;
+					case TimeTableDayState.name:
+						State = new TimeTableDayState(this, buttonPayload.Action);
+						break;
+				}
 			}
-			return builder.Build();
+			else {
+				State = new TimetableWeekState(this);
+			}
 		}
 
-		public override string ToString() => "OH SHIT ITS A TIMETABLE";
+		public void Action(ButtonPayload payload) {
+			State.Action(payload);
+		}
+
+		public ITimetableState State { get; set; }
+
+		public MessageKeyboard BuildKeyboard() => State.BuildKeyboard();
+
+		public override string ToString() => State.Message;
 	}
 }
