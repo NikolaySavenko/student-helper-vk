@@ -8,7 +8,7 @@ namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 	public class TimetableWeekState : TimetableState {
 		public const string Name = "WeekState";
 
-		private static readonly Dictionary<DayOfWeek, string> RuDays = new() {
+		public static readonly Dictionary<DayOfWeek, string> RuDays = new() {
 			{Monday, "Пн"},
 			{Tuesday, "Вт"},
 			{Wednesday, "Ср"},
