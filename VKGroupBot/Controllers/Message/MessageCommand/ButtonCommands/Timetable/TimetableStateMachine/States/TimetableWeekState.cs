@@ -6,9 +6,9 @@ using static System.DayOfWeek;
 
 namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 	public class TimetableWeekState : TimetableState {
-		public const string name = "WeekState";
+		public const string Name = "WeekState";
 
-		private static readonly Dictionary<DayOfWeek, string> ruDays = new() {
+		private static readonly Dictionary<DayOfWeek, string> RuDays = new() {
 			{Monday, "Пн"},
 			{Tuesday, "Вт"},
 			{Wednesday, "Ср"},
@@ -39,7 +39,7 @@ namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 			builder.SetInline();
 
 			var i = 0;
-			foreach (var day in ruDays) {
+			foreach (var day in RuDays) {
 				var data = Payload;
 				data.Action = day.Key.ToString();
 				var action = new MessageKeyboardButtonAction {
@@ -57,6 +57,6 @@ namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 			return builder.Build();
 		}
 
-		public override string ToString() => name;
+		public override string ToString() => Name;
 	}
 }

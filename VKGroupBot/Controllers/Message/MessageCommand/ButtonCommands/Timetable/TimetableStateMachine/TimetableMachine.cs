@@ -10,10 +10,10 @@ namespace VKGroupBot.Controllers.TimetableStateMachine {
 		public TimetableMachine(ButtonPayload buttonPayload) {
 			if (buttonPayload != null)
 				switch (buttonPayload.Stage) {
-					case TimetableWeekState.name:
+					case TimetableWeekState.Name:
 						State = new TimetableWeekState(this);
 						break;
-					case TimeTableDayState.name:
+					case TimeTableDayState.Name:
 						var even = bool.Parse(buttonPayload.Params);
 						State = new TimeTableDayState(this, buttonPayload.Action, even);
 						break;

@@ -6,11 +6,9 @@ using static System.DayOfWeek;
 
 namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 	public class TimeTableDayState : TimetableState {
-		public const string name = "DayState";
+		public const string Name = "DayState";
 
-		public const string EvenChangeParam = "even_change";
-
-		private static readonly Dictionary<DayOfWeek, string> daysWithCodes = new() {
+		private static readonly Dictionary<DayOfWeek, string> DaysWithCodes = new() {
 			{Monday, "mon"},
 			{Tuesday, "tue"},
 			{Wednesday, "wed"},
@@ -19,8 +17,8 @@ namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 			{Saturday, "sat"}
 		};
 
-		public readonly DayOfWeek _day;
-		public readonly bool _even;
+		private readonly DayOfWeek _day;
+		private readonly bool _even;
 
 		public TimeTableDayState(ITimeTableMachine machine, DayOfWeek day, bool even) : base(machine) {
 			_day = day;
@@ -44,17 +42,17 @@ namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 
 		public override void Action(ButtonPayload buttonPayload) {
 			switch (buttonPayload.Action) {
-				case name:
+				case Name:
 					var even = bool.Parse(buttonPayload.Params);
 					_machine.State = new TimeTableDayState(_machine, _day, even);
 					break;
-				case TimetableWeekState.name:
+				case TimetableWeekState.Name:
 					_machine.State = new TimetableWeekState(_machine);
 					break;
 			}
 		}
 
-		public override string ToString() => name;
+		public override string ToString() => Name;
 
 		public override MessageKeyboard BuildKeyboard() {
 			var builder = new KeyboardBuilder(false);
@@ -71,7 +69,7 @@ namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 			builder.AddLine();
 
 			var changeEven = Payload;
-			changeEven.Action = ToString();
+			changeEven.Action = _day.ToString();
 			changeEven.Params = (!_even).ToString();
 
 			var evenAction = new MessageKeyboardButtonAction {
