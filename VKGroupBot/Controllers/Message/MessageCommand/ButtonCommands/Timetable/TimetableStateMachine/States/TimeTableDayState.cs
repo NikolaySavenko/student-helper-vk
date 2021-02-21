@@ -67,13 +67,14 @@ namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 				Payload = goBackData.ToString()
 			};
 			builder.AddButton(backAction, KeyboardButtonColor.Primary);
+			builder.AddLine();
 
 			var changeEven = Payload;
 			changeEven.Action = evenChangeActionName;
 			var evenAction = new MessageKeyboardButtonAction {
 				Type = KeyboardButtonActionType.Callback,
 				Label = "Change Even",
-				Payload = goBackData.ToString()
+				Payload = changeEven.ToString()
 			};
 			builder.AddButton(evenAction, KeyboardButtonColor.Default);
 
