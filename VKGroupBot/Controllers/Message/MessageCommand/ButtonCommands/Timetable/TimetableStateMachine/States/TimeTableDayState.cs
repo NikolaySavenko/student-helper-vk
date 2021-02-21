@@ -6,8 +6,6 @@ using static System.DayOfWeek;
 
 namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 	public class TimeTableDayState : TimetableState {
-		public readonly DayOfWeek _day;
-
 		public const string name = "DayState";
 
 		private static readonly Dictionary<DayOfWeek, string> daysWithCodes = new() {
@@ -19,27 +17,30 @@ namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 			{Saturday, "sat"}
 		};
 
+		public readonly DayOfWeek _day;
+
 		public TimeTableDayState(ITimeTableMachine machine, DayOfWeek day) : base(machine) {
 			_day = day;
 		}
 
 		public TimeTableDayState(ITimeTableMachine machine, string day) : base(machine) {
-			bool result = DayOfWeek.TryParse(day, out _day);
-			if (!result) {
-				_day = Sunday;
-				// ERROR
-			}
+			var result = Enum.TryParse(day, out _day);
+			if (!result) _day = Sunday;
+			// ERROR
 		}
+
+		public override string Message => "DAY_" + _day;
+
+		private ButtonPayload Payload =>
+			new() {
+				CommandController = TimetableCommand.CommandStart,
+				Stage = ToString()
+			};
 
 		public override void Action(ButtonPayload buttonPayload) {
 			_machine.State = new TimetableWeekState(_machine);
 		}
 
-		public override string Message {
-			get {
-				return "DAY_" + _day;
-			}
-		}
 		public override string ToString() => name;
 
 		public override MessageKeyboard BuildKeyboard() {
@@ -55,11 +56,5 @@ namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 			builder.AddButton(action, KeyboardButtonColor.Primary);
 			return builder.Build();
 		}
-
-		private ButtonPayload Payload =>
-			new() {
-				CommandController = TimetableCommand.CommandStart,
-				Stage = ToString()
-			};
 	}
 }

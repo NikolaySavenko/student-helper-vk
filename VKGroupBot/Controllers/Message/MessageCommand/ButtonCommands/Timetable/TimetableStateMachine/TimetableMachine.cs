@@ -8,7 +8,7 @@ namespace VKGroupBot.Controllers.TimetableStateMachine {
 		}
 
 		public TimetableMachine(ButtonPayload buttonPayload) {
-			if (buttonPayload != null) {
+			if (buttonPayload != null)
 				switch (buttonPayload.Stage) {
 					case TimetableWeekState.name:
 						State = new TimetableWeekState(this);
@@ -17,10 +17,8 @@ namespace VKGroupBot.Controllers.TimetableStateMachine {
 						State = new TimeTableDayState(this, buttonPayload.Action);
 						break;
 				}
-			}
-			else {
+			else
 				State = new TimetableWeekState(this);
-			}
 		}
 
 		public void Action(ButtonPayload payload) {

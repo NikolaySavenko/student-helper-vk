@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using Newtonsoft.Json;
 using VkNet.Enums.SafetyEnums;
 using VkNet.Model.Keyboard;
 using static System.DayOfWeek;
 
 namespace VKGroupBot.Controllers.TimetableStateMachine.States {
-
 	public class TimetableWeekState : TimetableState {
 		public const string name = "WeekState";
+
 		private static readonly Dictionary<DayOfWeek, string> ruDays = new() {
 			{Monday, "Пн"},
 			{Tuesday, "Вт"},
@@ -25,6 +24,8 @@ namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 				CommandController = TimetableCommand.CommandStart,
 				Stage = ToString()
 			};
+
+		public override string Message => "ITS A FUKN WEEK";
 
 		public override void Action(ButtonPayload buttonPayload) {
 			var dayState = new TimeTableDayState(_machine, buttonPayload.Action);
@@ -55,11 +56,5 @@ namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 		}
 
 		public override string ToString() => name;
-
-		public override string Message {
-			get {
-				return "ITS A FUKN WEEK";
-			}
-		}
 	}
 }

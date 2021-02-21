@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Text;
 using VkNet.Model;
 
@@ -19,9 +18,7 @@ namespace VKGroupBot.Controllers {
 			using (var db = new PostgresContext()) {
 				var links = db.Links.ToList();
 				var sb = new StringBuilder();
-				foreach (var link in links) {
-					sb.AppendLine(link.SubjectName);
-				}
+				foreach (var link in links) sb.AppendLine(link.SubjectName);
 				SendMessage(sb.ToString());
 			}
 		}
@@ -65,9 +62,9 @@ namespace VKGroupBot.Controllers {
 							"А ну-ка давай играй по правилам! Умник тут нашелся! Думаешь разраб не предугадал твой ход?");
 					}
 
-					if (connectionLink != String.Empty || code != String.Empty) {
+					if (connectionLink != string.Empty || code != string.Empty) {
 						sb.AppendLine($"Предмет ({type}): {link.SubjectName}");
-						if (connectionLink != String.Empty) {
+						if (connectionLink != string.Empty) {
 							sb.AppendLine($"Ссылка: {connectionLink}");
 						}
 						else {
@@ -83,12 +80,9 @@ namespace VKGroupBot.Controllers {
 
 		public override void Execute() {
 			var type = Params.Split()[0];
-			if (type == ParamInfo) {
+			if (type == ParamInfo)
 				ShowSubjects();
-			}
-			else if(type == ParamLecture || type == ParamPractice) {
-				ShowSubjectInfo(type);
-			}
+			else if (type == ParamLecture || type == ParamPractice) ShowSubjectInfo(type);
 		}
 	}
 }
