@@ -8,8 +8,7 @@ namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 	public class TimeTableDayState : TimetableState {
 		public const string name = "DayState";
 
-		public const string backActionName = "week_back";
-		public const string evenChangeActionName = "even_change";
+		public const string EvenChangeParam = "even_change";
 
 		private static readonly Dictionary<DayOfWeek, string> daysWithCodes = new() {
 			{Monday, "mon"},
@@ -23,12 +22,12 @@ namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 		public readonly DayOfWeek _day;
 		public readonly bool _even;
 
-		public TimeTableDayState(ITimeTableMachine machine, DayOfWeek day, bool even = false) : base(machine) {
+		public TimeTableDayState(ITimeTableMachine machine, DayOfWeek day, bool even) : base(machine) {
 			_day = day;
 			_even = even;
 		}
 
-		public TimeTableDayState(ITimeTableMachine machine, string day, bool even = false) : base(machine) {
+		public TimeTableDayState(ITimeTableMachine machine, string day, bool even) : base(machine) {
 			_even = even;
 			var result = Enum.TryParse(day, out _day);
 			if (!result) _day = Sunday;
@@ -45,10 +44,11 @@ namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 
 		public override void Action(ButtonPayload buttonPayload) {
 			switch (buttonPayload.Action) {
-				case evenChangeActionName:
-					_machine.State = new TimeTableDayState(_machine, _day, !_even);
+				case name:
+					var even = bool.Parse(buttonPayload.Params);
+					_machine.State = new TimeTableDayState(_machine, _day, !even);
 					break;
-				case backActionName:
+				case TimetableWeekState.name:
 					_machine.State = new TimetableWeekState(_machine);
 					break;
 			}
@@ -60,7 +60,8 @@ namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 			var builder = new KeyboardBuilder(false);
 			builder.SetInline();
 			var goBackData = Payload;
-			goBackData.Action = backActionName;
+			goBackData.Action = ToString();
+
 			var backAction = new MessageKeyboardButtonAction {
 				Type = KeyboardButtonActionType.Callback,
 				Label = "fuck go back",
@@ -70,7 +71,9 @@ namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 			builder.AddLine();
 
 			var changeEven = Payload;
-			changeEven.Action = evenChangeActionName;
+			changeEven.Action = ToString();
+			changeEven.Params = "even";
+
 			var evenAction = new MessageKeyboardButtonAction {
 				Type = KeyboardButtonActionType.Callback,
 				Label = "Change Even",

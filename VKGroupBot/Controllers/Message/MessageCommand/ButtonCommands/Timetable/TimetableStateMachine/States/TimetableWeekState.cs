@@ -22,13 +22,15 @@ namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 		private ButtonPayload Payload =>
 			new() {
 				CommandController = TimetableCommand.CommandStart,
-				Stage = ToString()
+				Stage = ToString(),
+				Params = false.ToString()
 			};
 
 		public override string Message => "ITS A FUKN WEEK";
 
 		public override void Action(ButtonPayload buttonPayload) {
-			var dayState = new TimeTableDayState(_machine, buttonPayload.Action);
+			var even = bool.Parse(buttonPayload.Params);
+			var dayState = new TimeTableDayState(_machine, buttonPayload.Action, even);
 			_machine.State = dayState;
 		}
 

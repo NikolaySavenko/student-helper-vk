@@ -14,7 +14,8 @@ namespace VKGroupBot.Controllers.TimetableStateMachine {
 						State = new TimetableWeekState(this);
 						break;
 					case TimeTableDayState.name:
-						State = new TimeTableDayState(this, buttonPayload.Action);
+						var even = bool.Parse(buttonPayload.Params);
+						State = new TimeTableDayState(this, buttonPayload.Action, even);
 						break;
 				}
 			else
