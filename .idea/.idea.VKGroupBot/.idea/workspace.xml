@@ -24,30 +24,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcad2b51-eacf-4fa0-a770-40c1386c15e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/CarouselTry.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VKGroupBot/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VKGroupBot/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VKGroupBot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VKGroupBot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/CallbackController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/CallbackController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/ButtonPayload.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/ButtonPayload.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/EmptyMessageCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/CLICommands/EmptyMessageCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/ICommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ICommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/MessageCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/MessageCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/MessageCommandFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/MessageCommandFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/MessageCommandType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/MessageCommandType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/MessageCommandWithKeyboard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/MessageCommandWithKeyboard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/Timetable/TimetableCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/Interface/ITimeTableMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/Timetable/TimetableStateMachine/Interface/ITimeTableMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/Interface/ITimetableFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/Timetable/TimetableStateMachine/Interface/ITimetableFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/Interface/ITimetableState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/Timetable/TimetableStateMachine/Interface/ITimetableState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/States/TimeTableDayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/Timetable/TimetableStateMachine/States/TimeTableDayState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/States/TimetableWeekState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/Timetable/TimetableStateMachine/States/TimetableWeekState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/TimetableFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/Timetable/TimetableStateMachine/TimetableFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/TimetableMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/Timetable/TimetableStateMachine/TimetableMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/TimetableState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/Timetable/TimetableStateMachine/TimetableState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/ZoomLinkCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/CLICommands/ZoomLinkCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageSender/IMessageSender.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageSender/IMessageSender.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageSender/MessageSender.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageSender/MessageSender.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VKGroupBot/VKGroupBot.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/VKGroupBot.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/Timetable/TimetableStateMachine/States/TimeTableDayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/Timetable/TimetableStateMachine/States/TimeTableDayState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/Timetable/TimetableStateMachine/States/TimetableWeekState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/Timetable/TimetableStateMachine/States/TimetableWeekState.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +53,8 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/B8954790-C652-4EBA-B1A2-4F18D2469303/11A/ControllerActionInvoker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/687CD3EF-1206-406C-8B82-2CB02EE0595E/7/IConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4FD25650-C31F-4C3C-8A02-10A5247DC0E9/94/3f24585a/AddButtonParams.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4FD25650-C31F-4C3C-8A02-10A5247DC0E9/88/a2b521ff/KeyboardBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4FD25650-C31F-4C3C-8A02-10A5247DC0E9/cd/9d563214/MessageKeyboardButtonAction.cs" root0="SKIP_HIGHLIGHTING" />
@@ -124,7 +106,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/.gitignore" />
       <option value="$PROJECT_DIR$/VKGroupBot/Startup.cs" />
       <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7192cb65-97ed-42ae-b552-daba18aa74eb/console.sql" />
       <option value="$PROJECT_DIR$/VKGroupBot/Controllers/ZoomLink.cs" />
@@ -154,7 +135,6 @@
       <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/MessageCommand.cs" />
       <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/MessageCommandWithKeyboard.cs" />
       <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/DaysOfWeek.cs" />
-      <option value="$PROJECT_DIR$/VKGroupBot/TimeTableTest.http" />
       <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/TimetablePayload.cs" />
       <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/ButtonPayload.cs" />
       <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/ITimetableState.cs" />
@@ -169,8 +149,14 @@
       <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/TimetableMachine.cs" />
       <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/Interface/ITimeTableMachine.cs" />
       <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/States/TimeTableDayState.cs" />
-      <option value="$PROJECT_DIR$/VKGroupBot/buttonCheck.http" />
       <option value="$PROJECT_DIR$/VKGroupBot/Controllers/CallbackController.cs" />
+      <option value="$PROJECT_DIR$/README.md" />
+      <option value="$PROJECT_DIR$/VKGroupBot/TimeTableTest.http" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/ButtonPayload.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/Timetable/TimetableStateMachine/TimetableMachine.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/buttonCheck.http" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/Timetable/TimetableStateMachine/States/TimetableWeekState.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/Timetable/TimetableStateMachine/States/TimeTableDayState.cs" />
     </changedPaths>
   </component>
   <component name="JsFlowSettings">
@@ -187,17 +173,273 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3499701" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35082522" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/api/Callback" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_event&quot;,&#10;&quot;object&quot;: {&#10;&quot;user_id&quot;: 319129839,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;event_id&quot;: &quot;38668a01656a&quot;,&#10;&quot;payload&quot;: {&#10;&quot;CommandController&quot;: &quot;/timetable&quot;,&#10;&quot;Stage&quot;: &quot;DayState&quot;,&#10;&quot;Action&quot;: &quot;Saturday&quot;,&#10;&quot;Params&quot;: &quot;True&quot;&#10;},&#10;&quot;conversation_message_id&quot;: 285&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;5d53a3f642825901845c903ac62c671cdcf8fdeb&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/api/Callback" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_event&quot;,&#10;&quot;object&quot;: {&#10;&quot;user_id&quot;: 319129839,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;event_id&quot;: &quot;38668a01656a&quot;,&#10;&quot;payload&quot;: {&#10;&quot;CommandController&quot;: &quot;/timetable&quot;,&#10;&quot;Stage&quot;: &quot;DayState&quot;,&#10;&quot;Action&quot;: &quot;Saturday&quot;,&#10;&quot;Params&quot;: &quot;False&quot;&#10;},&#10;&quot;conversation_message_id&quot;: 285&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;5d53a3f642825901845c903ac62c671cdcf8fdeb&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/api/Callback" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_event&quot;,&#10;&quot;object&quot;: {&#10;&quot;user_id&quot;: 319129839,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;event_id&quot;: &quot;38668a01656a&quot;,&#10;&quot;payload&quot;: {&#10;&quot;CommandController&quot;: &quot;/timetable&quot;,&#10;&quot;Stage&quot;: &quot;DayState&quot;,&#10;&quot;Action&quot;: &quot;Friday&quot;,&#10;&quot;Params&quot;: &quot;False&quot;&#10;},&#10;&quot;conversation_message_id&quot;: 285&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;5d53a3f642825901845c903ac62c671cdcf8fdeb&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/api/Callback" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_event&quot;,&#10;&quot;object&quot;: {&#10;&quot;user_id&quot;: 319129839,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;event_id&quot;: &quot;38668a01656a&quot;,&#10;&quot;payload&quot;: {&#10;&quot;CommandController&quot;: &quot;/timetable&quot;,&#10;&quot;Stage&quot;: &quot;DayState&quot;,&#10;&quot;Action&quot;: &quot;Thursday&quot;,&#10;&quot;Params&quot;: &quot;False&quot;&#10;},&#10;&quot;conversation_message_id&quot;: 285&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;5d53a3f642825901845c903ac62c671cdcf8fdeb&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/api/Callback" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_event&quot;,&#10;&quot;object&quot;: {&#10;&quot;user_id&quot;: 319129839,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;event_id&quot;: &quot;38668a01656a&quot;,&#10;&quot;payload&quot;: {&#10;&quot;CommandController&quot;: &quot;/timetable&quot;,&#10;&quot;Stage&quot;: &quot;DayState&quot;,&#10;&quot;Action&quot;: &quot;Wednesday&quot;,&#10;&quot;Params&quot;: &quot;False&quot;&#10;},&#10;&quot;conversation_message_id&quot;: 285&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;5d53a3f642825901845c903ac62c671cdcf8fdeb&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/api/Callback" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_event&quot;,&#10;&quot;object&quot;: {&#10;&quot;user_id&quot;: 319129839,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;event_id&quot;: &quot;38668a01656a&quot;,&#10;&quot;payload&quot;: {&#10;&quot;CommandController&quot;: &quot;/timetable&quot;,&#10;&quot;Stage&quot;: &quot;DayState&quot;,&#10;&quot;Action&quot;: &quot;Tuesday&quot;,&#10;&quot;Params&quot;: &quot;False&quot;&#10;},&#10;&quot;conversation_message_id&quot;: 285&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;5d53a3f642825901845c903ac62c671cdcf8fdeb&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/api/Callback" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_event&quot;,&#10;&quot;object&quot;: {&#10;&quot;user_id&quot;: 319129839,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;event_id&quot;: &quot;38668a01656a&quot;,&#10;&quot;payload&quot;: {&#10;&quot;CommandController&quot;: &quot;/timetable&quot;,&#10;&quot;Stage&quot;: &quot;DayState&quot;,&#10;&quot;Action&quot;: &quot;Monday&quot;,&#10;&quot;Params&quot;: &quot;False&quot;&#10;},&#10;&quot;conversation_message_id&quot;: 285&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;5d53a3f642825901845c903ac62c671cdcf8fdeb&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/api/Callback" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_event&quot;,&#10;&quot;object&quot;: {&#10;&quot;user_id&quot;: 319129839,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;event_id&quot;: &quot;38668a01656a&quot;,&#10;&quot;payload&quot;: {&#10;&quot;CommandController&quot;: &quot;/timetable&quot;,&#10;&quot;Stage&quot;: &quot;DayState&quot;,&#10;&quot;Action&quot;: &quot;DayState&quot;,&#10;&quot;Params&quot;: &quot;False&quot;&#10;},&#10;&quot;conversation_message_id&quot;: 285&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;5d53a3f642825901845c903ac62c671cdcf8fdeb&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/api/Callback" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_event&quot;,&#10;&quot;object&quot;: {&#10;&quot;user_id&quot;: 319129839,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;event_id&quot;: &quot;38668a01656a&quot;,&#10;&quot;payload&quot;: {&#10;&quot;CommandController&quot;: &quot;/timetable&quot;,&#10;&quot;Stage&quot;: &quot;DayState&quot;,&#10;&quot;Action&quot;: &quot;WeekState&quot;,&#10;&quot;Params&quot;: &quot;False&quot;&#10;},&#10;&quot;conversation_message_id&quot;: 285&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;5d53a3f642825901845c903ac62c671cdcf8fdeb&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/api/Callback" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_event&quot;,&#10;&quot;object&quot;: {&#10;&quot;user_id&quot;: 319129839,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;event_id&quot;: &quot;38668a01656a&quot;,&#10;&quot;payload&quot;: {&#10;&quot;CommandController&quot;: &quot;/timetable&quot;,&#10;&quot;Stage&quot;: &quot;DayState&quot;,&#10;&quot;Action&quot;: &quot;WeekState&quot;,&#10;&quot;Params&quot;: null&#10;},&#10;&quot;conversation_message_id&quot;: 285&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;5d53a3f642825901845c903ac62c671cdcf8fdeb&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/api/Callback" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_new&quot;,&#10;&quot;object&quot;: {&#10;&quot;message&quot;: {&#10;&quot;date&quot;: 1613169061,&#10;&quot;from_id&quot;: 319129839,&#10;&quot;id&quot;: 129,&#10;&quot;out&quot;: 0,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;text&quot;: &quot;/timetable&quot;,&#10;&quot;conversation_message_id&quot;: 107,&#10;&quot;fwd_messages&quot;: [],&#10;&quot;important&quot;: false,&#10;&quot;random_id&quot;: 0,&#10;&quot;attachments&quot;: [],&#10;&quot;is_hidden&quot;: false&#10;},&#10;&quot;client_info&quot;: {&#10;&quot;button_actions&quot;: [&#10;&quot;text&quot;,&#10;&quot;intent_subscribe&quot;,&#10;&quot;intent_unsubscribe&quot;&#10;],&#10;&quot;keyboard&quot;: true,&#10;&quot;inline_keyboard&quot;: false,&#10;&quot;carousel&quot;: false,&#10;&quot;lang_id&quot;: 0&#10;}&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;3470e3afce7cdded4deecbb209ba3b59922527ef&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/api/Callback" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_event&quot;,&#10;&quot;object&quot;: {&#10;&quot;user_id&quot;: 319129839,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;event_id&quot;: &quot;ae0cd327dd02&quot;,&#10;&quot;payload&quot;: {&#10;&quot;CommandController&quot;: &quot;/timetable&quot;,&#10;&quot;Stage&quot;: &quot;DayState&quot;,&#10;&quot;Action&quot;: &quot;DayState&quot;,&#10;&quot;Params&quot;: null&#10;},&#10;&quot;conversation_message_id&quot;: 282&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;d03db4f82b71a3b3b40f963f1cadb0841d5beb4e&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/api/Callback" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_event&quot;,&#10;&quot;object&quot;: {&#10;&quot;user_id&quot;: 319129839,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;event_id&quot;: &quot;a9362e76c272&quot;,&#10;&quot;payload&quot;: {&#10;&quot;CommandController&quot;: &quot;/timetable&quot;,&#10;&quot;Stage&quot;: &quot;WeekState&quot;,&#10;&quot;Action&quot;: &quot;Tuesday&quot;,&#10;&quot;Params&quot;: &quot;False&quot;&#10;},&#10;&quot;conversation_message_id&quot;: 274&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;55c962f6e4cc4ad41fb1457b842cc397d47756ea&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/api/Callback" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_event&quot;,&#10;&quot;object&quot;: {&#10;&quot;user_id&quot;: 319129839,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;event_id&quot;: &quot;16c25333de3e&quot;,&#10;&quot;payload&quot;: {&#10;&quot;CommandController&quot;: &quot;/timetable&quot;,&#10;&quot;Stage&quot;: &quot;WeekState&quot;,&#10;&quot;Action&quot;: &quot;Tuesday&quot;&#10;},&#10;&quot;conversation_message_id&quot;: 273&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;03c8ba32e955865c895efe2ede42c2a8e0f23cd7&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/api/Callback" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_event&quot;,&#10;&quot;object&quot;: {&#10;&quot;user_id&quot;: 319129839,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;event_id&quot;: &quot;bc0f9785719e&quot;,&#10;&quot;payload&quot;: {&#10;&quot;CommandController&quot;: &quot;/timetable&quot;,&#10;&quot;Stage&quot;: &quot;DayState&quot;,&#10;&quot;Action&quot;: &quot;even_change&quot;&#10;},&#10;&quot;conversation_message_id&quot;: 271&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;3ab00f67244638c4465804aa80cfdcf69484db63&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/api/Callback" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_event&quot;,&#10;&quot;object&quot;: {&#10;&quot;user_id&quot;: 319129839,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;event_id&quot;: &quot;bc0f9785719e&quot;,&#10;&quot;payload&quot;: {&#10;&quot;CommandController&quot;: &quot;/timetable&quot;,&#10;&quot;Stage&quot;: &quot;DayState&quot;,&#10;&quot;Action&quot;: &quot;even_change&quot;&#10;},&#10;&quot;conversation_message_id&quot;: 265&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;3ab00f67244638c4465804aa80cfdcf69484db63&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="https://localhost:5001/api/Callback" />
@@ -228,22 +470,6 @@
           </option>
           <option name="haveTextToSend" value="true" />
           <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_event&quot;,&#10;&quot;object&quot;: {&#10;&quot;user_id&quot;: 319129839,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;event_id&quot;: &quot;b7d51d77f90d&quot;,&#10;&quot;payload&quot;: {&#10;&quot;CommandController&quot;: &quot;/timetable&quot;,&#10;&quot;Stage&quot;: &quot;WeekState&quot;,&#10;&quot;Action&quot;: &quot;Tuesday&quot;&#10;},&#10;&quot;conversation_message_id&quot;: 265&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;b942939d47e56c5ec8278f5f884c1d3bbbc6d7ee&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://localhost:5001/api/Callback" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_new&quot;,&#10;&quot;object&quot;: {&#10;&quot;message&quot;: {&#10;&quot;date&quot;: 1613169061,&#10;&quot;from_id&quot;: 319129839,&#10;&quot;id&quot;: 129,&#10;&quot;out&quot;: 0,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;text&quot;: &quot;/timetable&quot;,&#10;&quot;conversation_message_id&quot;: 107,&#10;&quot;fwd_messages&quot;: [],&#10;&quot;important&quot;: false,&#10;&quot;random_id&quot;: 0,&#10;&quot;attachments&quot;: [],&#10;&quot;is_hidden&quot;: false&#10;},&#10;&quot;client_info&quot;: {&#10;&quot;button_actions&quot;: [&#10;&quot;text&quot;,&#10;&quot;intent_subscribe&quot;,&#10;&quot;intent_unsubscribe&quot;&#10;],&#10;&quot;keyboard&quot;: true,&#10;&quot;inline_keyboard&quot;: false,&#10;&quot;carousel&quot;: false,&#10;&quot;lang_id&quot;: 0&#10;}&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;3470e3afce7cdded4deecbb209ba3b59922527ef&quot;&#10;}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
@@ -392,6 +618,9 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="All in TimeTableTest" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/VKGroupBot/TimeTableTest.http">
+      <method v="2" />
+    </configuration>
     <configuration name="TimeTableTest#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/VKGroupBot/TimeTableTest.http" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -402,11 +631,13 @@
       <item itemvalue=".NET Project.VKGroupBot" />
       <item itemvalue="HTTP Request.TimeTableTest#1" />
       <item itemvalue="HTTP Request.buttonCheck#1" />
+      <item itemvalue="HTTP Request.All in TimeTableTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.buttonCheck#1" />
         <item itemvalue="HTTP Request.TimeTableTest#1" />
+        <item itemvalue="HTTP Request.buttonCheck#1" />
+        <item itemvalue="HTTP Request.All in TimeTableTest" />
       </list>
     </recent_temporary>
   </component>
@@ -436,7 +667,8 @@
       <workItem from="1613670671031" duration="66000" />
       <workItem from="1613729561015" duration="34708000" />
       <workItem from="1613894818514" duration="1187000" />
-      <workItem from="1613910796634" duration="788000" />
+      <workItem from="1613910796634" duration="14832000" />
+      <workItem from="1613930389436" duration="1248000" />
     </task>
     <task id="LOCAL-00001" summary="try to make VK response">
       <created>1612962332816</created>
@@ -564,7 +796,77 @@
       <option name="project" value="LOCAL" />
       <updated>1613818408573</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="changed folder structure">
+      <created>1613911690438</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1613911690438</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Auto code cleanup">
+      <created>1613911853637</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1613911853637</updated>
+    </task>
+    <task id="LOCAL-00021" summary="make even week support">
+      <created>1613913852602</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1613913852602</updated>
+    </task>
+    <task id="LOCAL-00022" summary="fixed uncorrect button payload">
+      <created>1613914298822</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1613914298822</updated>
+    </task>
+    <task id="LOCAL-00023" summary="added params to button payload">
+      <created>1613919531133</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1613919531133</updated>
+    </task>
+    <task id="LOCAL-00024" summary="fixed even param in payload">
+      <created>1613919794323</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1613919794323</updated>
+    </task>
+    <task id="LOCAL-00025" summary="fixed day in payload">
+      <created>1613920194172</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1613920194173</updated>
+    </task>
+    <task id="LOCAL-00026" summary="fixed go back button in payload">
+      <created>1613920574148</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1613920574148</updated>
+    </task>
+    <task id="LOCAL-00027" summary="fixed null param in go back button">
+      <created>1613921059912</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1613921059912</updated>
+    </task>
+    <task id="LOCAL-00028" summary="beautiful display of day">
+      <created>1613924320527</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1613924320527</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -586,9 +888,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="try to make VK response" />
-    <MESSAGE value="changed OK message on confirmation" />
-    <MESSAGE value="echo try" />
     <MESSAGE value="added Newtonsoft.Json dep" />
     <MESSAGE value="fixed OK message" />
     <MESSAGE value="try to get real headers" />
@@ -604,6 +903,16 @@
     <MESSAGE value="Added simple zoom command" />
     <MESSAGE value="First timetable pattern" />
     <MESSAGE value="FSM model of timetable" />
-    <option name="LAST_COMMIT_MESSAGE" value="FSM model of timetable" />
+    <MESSAGE value="changed folder structure" />
+    <MESSAGE value="Auto code cleanup" />
+    <MESSAGE value="make even week support" />
+    <MESSAGE value="fixed uncorrect button payload" />
+    <MESSAGE value="added params to button payload" />
+    <MESSAGE value="fixed even param in payload" />
+    <MESSAGE value="fixed day in payload" />
+    <MESSAGE value="fixed go back button in payload" />
+    <MESSAGE value="fixed null param in go back button" />
+    <MESSAGE value="beautiful display of day" />
+    <option name="LAST_COMMIT_MESSAGE" value="beautiful display of day" />
   </component>
 </project>

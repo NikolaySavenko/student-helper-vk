@@ -93,28 +93,28 @@ namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 		public override MessageKeyboard BuildKeyboard() {
 			var builder = new KeyboardBuilder(false);
 			builder.SetInline();
-			var goBackData = Payload;
-			goBackData.Action = TimetableWeekState.Name;
-			goBackData.Params = _even.ToString();
-
-			var backAction = new MessageKeyboardButtonAction {
-				Type = KeyboardButtonActionType.Callback,
-				Label = "fuck go back",
-				Payload = goBackData.ToString()
-			};
-			builder.AddButton(backAction, KeyboardButtonColor.Primary);
-			builder.AddLine();
-
 			var changeEven = Payload;
 			changeEven.Action = _day.ToString();
 			changeEven.Params = (!_even).ToString();
 
 			var evenAction = new MessageKeyboardButtonAction {
 				Type = KeyboardButtonActionType.Callback,
-				Label = "Change Even",
+				Label = "Изменить четность",
 				Payload = changeEven.ToString()
 			};
 			builder.AddButton(evenAction, KeyboardButtonColor.Default);
+			builder.AddLine();
+
+			var goBackData = Payload;
+			goBackData.Action = TimetableWeekState.Name;
+			goBackData.Params = _even.ToString();
+
+			var backAction = new MessageKeyboardButtonAction {
+				Type = KeyboardButtonActionType.Callback,
+				Label = "Назад",
+				Payload = goBackData.ToString()
+			};
+			builder.AddButton(backAction, KeyboardButtonColor.Primary);
 
 			return builder.Build();
 		}

@@ -51,6 +51,7 @@
               <e p="MessageSender.cs" t="Include" />
             </e>
           </e>
+          <e p="MessageEvents" t="Include" />
         </e>
         <e p="Models" t="Include">
           <e p="Couple.cs" t="Include" />

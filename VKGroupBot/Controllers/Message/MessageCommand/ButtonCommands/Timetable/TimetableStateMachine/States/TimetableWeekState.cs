@@ -26,7 +26,7 @@ namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 				Params = false.ToString()
 			};
 
-		public override string Message => "ITS A FUKN WEEK";
+		public override string Message => "Выбрать день недели:";
 
 		public override void Action(ButtonPayload buttonPayload) {
 			var even = bool.Parse(buttonPayload.Params);
