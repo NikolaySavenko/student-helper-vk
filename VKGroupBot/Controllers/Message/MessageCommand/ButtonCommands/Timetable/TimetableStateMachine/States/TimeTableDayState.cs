@@ -46,7 +46,7 @@ namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 			switch (buttonPayload.Action) {
 				case name:
 					var even = bool.Parse(buttonPayload.Params);
-					_machine.State = new TimeTableDayState(_machine, _day, !even);
+					_machine.State = new TimeTableDayState(_machine, _day, even);
 					break;
 				case TimetableWeekState.name:
 					_machine.State = new TimetableWeekState(_machine);
@@ -72,7 +72,7 @@ namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 
 			var changeEven = Payload;
 			changeEven.Action = ToString();
-			changeEven.Params = "even";
+			changeEven.Params = (!_even).ToString();
 
 			var evenAction = new MessageKeyboardButtonAction {
 				Type = KeyboardButtonActionType.Callback,
