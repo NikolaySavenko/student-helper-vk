@@ -8,6 +8,9 @@ namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 	public class TimeTableDayState : TimetableState {
 		public const string name = "DayState";
 
+		public const string backActionName = "week_back";
+		public const string evenChangeActionName = "even_change";
+
 		private static readonly Dictionary<DayOfWeek, string> daysWithCodes = new() {
 			{Monday, "mon"},
 			{Tuesday, "tue"},
@@ -18,18 +21,21 @@ namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 		};
 
 		public readonly DayOfWeek _day;
+		public readonly bool _even;
 
-		public TimeTableDayState(ITimeTableMachine machine, DayOfWeek day) : base(machine) {
+		public TimeTableDayState(ITimeTableMachine machine, DayOfWeek day, bool even = false) : base(machine) {
 			_day = day;
+			_even = even;
 		}
 
-		public TimeTableDayState(ITimeTableMachine machine, string day) : base(machine) {
+		public TimeTableDayState(ITimeTableMachine machine, string day, bool even = false) : base(machine) {
+			_even = even;
 			var result = Enum.TryParse(day, out _day);
 			if (!result) _day = Sunday;
 			// ERROR
 		}
 
-		public override string Message => "DAY_" + _day;
+		public override string Message => $"DAY: {_day}; even: {_even}";
 
 		private ButtonPayload Payload =>
 			new() {
@@ -38,7 +44,14 @@ namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 			};
 
 		public override void Action(ButtonPayload buttonPayload) {
-			_machine.State = new TimetableWeekState(_machine);
+			switch (buttonPayload.Action) {
+				case evenChangeActionName:
+					_machine.State = new TimeTableDayState(_machine, _day, !_even);
+					break;
+				case backActionName:
+					_machine.State = new TimetableWeekState(_machine);
+					break;
+			}
 		}
 
 		public override string ToString() => name;
@@ -46,14 +59,24 @@ namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 		public override MessageKeyboard BuildKeyboard() {
 			var builder = new KeyboardBuilder(false);
 			builder.SetInline();
-			var data = Payload;
-			data.Action = null;
-			var action = new MessageKeyboardButtonAction {
+			var goBackData = Payload;
+			goBackData.Action = backActionName;
+			var backAction = new MessageKeyboardButtonAction {
 				Type = KeyboardButtonActionType.Callback,
 				Label = "fuck go back",
-				Payload = data.ToString()
+				Payload = goBackData.ToString()
 			};
-			builder.AddButton(action, KeyboardButtonColor.Primary);
+			builder.AddButton(backAction, KeyboardButtonColor.Primary);
+
+			var changeEven = Payload;
+			changeEven.Action = evenChangeActionName;
+			var evenAction = new MessageKeyboardButtonAction {
+				Type = KeyboardButtonActionType.Callback,
+				Label = "Change Even",
+				Payload = goBackData.ToString()
+			};
+			builder.AddButton(evenAction, KeyboardButtonColor.Default);
+
 			return builder.Build();
 		}
 	}
