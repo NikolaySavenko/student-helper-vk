@@ -24,7 +24,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcad2b51-eacf-4fa0-a770-40c1386c15e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/CarouselTry.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VKGroupBot/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VKGroupBot/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VKGroupBot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VKGroupBot/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/CallbackController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/CallbackController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/ButtonPayload.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/ButtonPayload.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/EmptyMessageCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/CLICommands/EmptyMessageCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/ICommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ICommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/MessageCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/MessageCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/MessageCommandFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/MessageCommandFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/MessageCommandType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/MessageCommandType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/MessageCommandWithKeyboard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/MessageCommandWithKeyboard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/Timetable/TimetableCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/Interface/ITimeTableMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/Timetable/TimetableStateMachine/Interface/ITimeTableMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/Interface/ITimetableFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/Timetable/TimetableStateMachine/Interface/ITimetableFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/Interface/ITimetableState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/Timetable/TimetableStateMachine/Interface/ITimetableState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/States/TimeTableDayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/Timetable/TimetableStateMachine/States/TimeTableDayState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/States/TimetableWeekState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/Timetable/TimetableStateMachine/States/TimetableWeekState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/TimetableFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/Timetable/TimetableStateMachine/TimetableFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/TimetableMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/Timetable/TimetableStateMachine/TimetableMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/TimetableState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/ButtonCommands/Timetable/TimetableStateMachine/TimetableState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/ZoomLinkCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageCommand/CLICommands/ZoomLinkCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageSender/IMessageSender.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageSender/IMessageSender.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VKGroupBot/Controllers/MessageSender/MessageSender.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/Controllers/Message/MessageSender/MessageSender.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VKGroupBot/VKGroupBot.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/VKGroupBot/VKGroupBot.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,38 +54,123 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTTP Request" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/434604A6-1A53-4411-B314-A76B813B14D1/13/JsonElement.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02903C9-65C8-4DAF-B8E6-67EE1326BC79/3c/5ecf612d/GroupUpdate.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02903C9-65C8-4DAF-B8E6-67EE1326BC79/fb/f01db893/Message.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02903C9-65C8-4DAF-B8E6-67EE1326BC79/ec/6998056b/VkResponse.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02903C9-65C8-4DAF-B8E6-67EE1326BC79/b5/8963f91d/IMessagesCategory.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02903C9-65C8-4DAF-B8E6-67EE1326BC79/a3/fe0e8556/MessagesSendParams.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02903C9-65C8-4DAF-B8E6-67EE1326BC79/d2/8cc46358/MessageTemplate.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02903C9-65C8-4DAF-B8E6-67EE1326BC79/a8/d03f296c/MessageKeyboardButton.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02903C9-65C8-4DAF-B8E6-67EE1326BC79/3d/7f3f4946/MessageKeyboardButtonAction.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4FD25650-C31F-4C3C-8A02-10A5247DC0E9/94/3f24585a/AddButtonParams.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4FD25650-C31F-4C3C-8A02-10A5247DC0E9/88/a2b521ff/KeyboardBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4FD25650-C31F-4C3C-8A02-10A5247DC0E9/cd/9d563214/MessageKeyboardButtonAction.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4FD25650-C31F-4C3C-8A02-10A5247DC0E9/f8/8bd1f73d/MessageKeyboardButton.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D5C46A23-9118-4319-AA30-7E67E7A0A444/153/ControllerFactoryProvider.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02903C9-65C8-4DAF-B8E6-67EE1326BC79/97/ecac925a/CarouselElement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D5C46A23-9118-4319-AA30-7E67E7A0A444/150/ControllerActivatorProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/292686BF-FC5F-4D8D-B359-C1681C3772C6/4B/IActionInvoker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4FD25650-C31F-4C3C-8A02-10A5247DC0E9/17/953deac5/MessageKeyboard.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC542A5C-3AD0-4C34-A080-02E941B52719/1e/50f901d7/Task.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D5C46A23-9118-4319-AA30-7E67E7A0A444/194/ObjectMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D5C46A23-9118-4319-AA30-7E67E7A0A444/F3/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4FD25650-C31F-4C3C-8A02-10A5247DC0E9/22/690c1d59/MessagesSendParams.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/BC542A5C-3AD0-4C34-A080-02E941B52719/16B/Task.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D5C46A23-9118-4319-AA30-7E67E7A0A444/FE/ControllerActionInvoker.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/BC542A5C-3AD0-4C34-A080-02E941B52719/178/ValueTask.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/20735148-1523-4917-A5E8-F91B0B239405/80/JToken.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4FD25650-C31F-4C3C-8A02-10A5247DC0E9/7e/8f72a02e/IKeyboardBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02903C9-65C8-4DAF-B8E6-67EE1326BC79/d5/d58f7f5d/GroupUpdateType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4FD25650-C31F-4C3C-8A02-10A5247DC0E9/4a/1c42d730/Message.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D5C46A23-9118-4319-AA30-7E67E7A0A444/11C/ResourceInvoker.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D5C46A23-9118-4319-AA30-7E67E7A0A444/6D/ActionEndpointFactory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4FD25650-C31F-4C3C-8A02-10A5247DC0E9/e0/70b0b1ec/MessageEditParams.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D5C46A23-9118-4319-AA30-7E67E7A0A444/46/MvcCoreLoggerExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/B8954790-C652-4EBA-B1A2-4F18D2469303/5/ObjectMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5BA12757-5290-40E1-A722-5718336AD174/13/EndpointMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/B8954790-C652-4EBA-B1A2-4F18D2469303/10F/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/434604A6-1A53-4411-B314-A76B813B14D1/13/JsonElement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02903C9-65C8-4DAF-B8E6-67EE1326BC79/3c/5ecf612d/GroupUpdate.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4FD25650-C31F-4C3C-8A02-10A5247DC0E9/4d/aed5f104/VkObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02903C9-65C8-4DAF-B8E6-67EE1326BC79/fb/f01db893/Message.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02903C9-65C8-4DAF-B8E6-67EE1326BC79/ec/6998056b/VkResponse.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4FD25650-C31F-4C3C-8A02-10A5247DC0E9/00/65b15a35/GroupUpdateType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02903C9-65C8-4DAF-B8E6-67EE1326BC79/b5/8963f91d/IMessagesCategory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4FD25650-C31F-4C3C-8A02-10A5247DC0E9/02/8f592bcd/GroupUpdate.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02903C9-65C8-4DAF-B8E6-67EE1326BC79/a3/fe0e8556/MessagesSendParams.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02903C9-65C8-4DAF-B8E6-67EE1326BC79/d2/8cc46358/MessageTemplate.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02903C9-65C8-4DAF-B8E6-67EE1326BC79/a8/d03f296c/MessageKeyboardButton.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02903C9-65C8-4DAF-B8E6-67EE1326BC79/3d/7f3f4946/MessageKeyboardButtonAction.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/DBA58037-25D4-4AD7-8325-A1CC64DEF406/81/JToken.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02903C9-65C8-4DAF-B8E6-67EE1326BC79/97/ecac925a/CarouselElement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4FD25650-C31F-4C3C-8A02-10A5247DC0E9/58/5d8d0c5a/VkResponse.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/B8954790-C652-4EBA-B1A2-4F18D2469303/5A/MvcCoreLoggerExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/37/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4FD25650-C31F-4C3C-8A02-10A5247DC0E9/68/6aa71da0/MessageEvent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4FD25650-C31F-4C3C-8A02-10A5247DC0E9/fe/3d70c4e9/ApiAuthParams.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3BB42FD3-8BD8-407B-9667-FBF8CE1367E9/35/fb94c827/KeyValuePair`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/412/Dictionary.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/IL/4FD25650-C31F-4C3C-8A02-10A5247DC0E9/ff/d19e7d6e/0200039B.il" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/.gitignore" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Startup.cs" />
+      <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7192cb65-97ed-42ae-b552-daba18aa74eb/console.sql" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/ZoomLink.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/ApplicationContext.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Model/postgresContext.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Model/PostgresContext.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Properties/launchSettings.json" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Models/PostgresContext.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand.ts.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/ICommand.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/ZoomLinkCommand.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommandType.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/EmptyMessageCommand.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommandFactory.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageSender.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/EmptyMessageCommand.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/ZoomLinkCommand.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/MessageCommandType.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/MessageCommandFactory.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/Timetable.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/States/TimetableStateInitial.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/TimetableStates.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/ITimetableFactory.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageSender/MessageSender.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageSender/IMessageSender.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/MessageCommand.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/MessageCommandWithKeyboard.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/DaysOfWeek.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/TimeTableTest.http" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/TimetablePayload.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/ButtonPayload.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/ITimetableState.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/ITimeTableMachine.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/States/TimetableWeekStatecs.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/TimetableState.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/Interface/ITimetableState.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/States/TimetableWeekState.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/TimetableFactory.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableCommand.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/Interface/ITimetableFactory.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/TimetableMachine.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/Interface/ITimeTableMachine.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/MessageCommand/TimetableStateMachine/States/TimeTableDayState.cs" />
+      <option value="$PROJECT_DIR$/VKGroupBot/buttonCheck.http" />
+      <option value="$PROJECT_DIR$/VKGroupBot/Controllers/CallbackController.cs" />
     </changedPaths>
   </component>
   <component name="JsFlowSettings">
@@ -79,20 +186,199 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34996918" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.3000616" />
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3499701" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/api/Callback" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_event&quot;,&#10;&quot;object&quot;: {&#10;&quot;user_id&quot;: 319129839,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;event_id&quot;: &quot;bc0f9785719e&quot;,&#10;&quot;payload&quot;: {&#10;&quot;CommandController&quot;: &quot;/timetable&quot;,&#10;&quot;Stage&quot;: &quot;DayState&quot;,&#10;&quot;Action&quot;: null&#10;},&#10;&quot;conversation_message_id&quot;: 265&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;3ab00f67244638c4465804aa80cfdcf69484db63&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/api/Callback" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_event&quot;,&#10;&quot;object&quot;: {&#10;&quot;user_id&quot;: 319129839,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;event_id&quot;: &quot;b7d51d77f90d&quot;,&#10;&quot;payload&quot;: {&#10;&quot;CommandController&quot;: &quot;/timetable&quot;,&#10;&quot;Stage&quot;: &quot;WeekState&quot;,&#10;&quot;Action&quot;: &quot;Tuesday&quot;&#10;},&#10;&quot;conversation_message_id&quot;: 265&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;b942939d47e56c5ec8278f5f884c1d3bbbc6d7ee&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/api/Callback" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_new&quot;,&#10;&quot;object&quot;: {&#10;&quot;message&quot;: {&#10;&quot;date&quot;: 1613169061,&#10;&quot;from_id&quot;: 319129839,&#10;&quot;id&quot;: 129,&#10;&quot;out&quot;: 0,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;text&quot;: &quot;/timetable&quot;,&#10;&quot;conversation_message_id&quot;: 107,&#10;&quot;fwd_messages&quot;: [],&#10;&quot;important&quot;: false,&#10;&quot;random_id&quot;: 0,&#10;&quot;attachments&quot;: [],&#10;&quot;is_hidden&quot;: false&#10;},&#10;&quot;client_info&quot;: {&#10;&quot;button_actions&quot;: [&#10;&quot;text&quot;,&#10;&quot;intent_subscribe&quot;,&#10;&quot;intent_unsubscribe&quot;&#10;],&#10;&quot;keyboard&quot;: true,&#10;&quot;inline_keyboard&quot;: false,&#10;&quot;carousel&quot;: false,&#10;&quot;lang_id&quot;: 0&#10;}&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;3470e3afce7cdded4deecbb209ba3b59922527ef&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/api/Callback" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_event&quot;,&#10;&quot;object&quot;: {&#10;&quot;user_id&quot;: 319129839,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;event_id&quot;: &quot;0218e9b31f48&quot;,&#10;&quot;payload&quot;: {&#10;&quot;CommandController&quot;: &quot;/timetable&quot;,&#10;&quot;Stage&quot;: &quot;WeekState&quot;,&#10;&quot;Action&quot;: &quot;Saturday&quot;&#10;},&#10;&quot;conversation_message_id&quot;: 264&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;50a663c80e27b1ea47405bd63288106134dc1d9f&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/api/Callback" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_event&quot;,&#10;&quot;object&quot;: {&#10;&quot;user_id&quot;: 319129839,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;event_id&quot;: &quot;f2045e3f4a79&quot;,&#10;&quot;payload&quot;: {&#10;&quot;action&quot;: &quot;getDay_wed&quot;&#10;},&#10;&quot;conversation_message_id&quot;: 240&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;10c030beec9d3cd2c1880ed87eb45f1f3bc7b5a6&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/api/Callback" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_event&quot;,&#10;&quot;object&quot;: {&#10;&quot;user_id&quot;: 319129839,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;event_id&quot;: &quot;f2045e3f4a79&quot;,&#10;&quot;payload&quot;: {&#10;&quot;action&quot;: &quot;getDay_wed&quot;&#10;},&#10;&quot;conversation_message_id&quot;: 250&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;10c030beec9d3cd2c1880ed87eb45f1f3bc7b5a6&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/api/Callback" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_event&quot;,&#10;&quot;object&quot;: {&#10;&quot;user_id&quot;: 319129839,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;event_id&quot;: &quot;f2045e3f4a79&quot;,&#10;&quot;payload&quot;: {&#10;&quot;button&quot;: &quot;thu&quot;&#10;},&#10;&quot;conversation_message_id&quot;: 250&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;10c030beec9d3cd2c1880ed87eb45f1f3bc7b5a6&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/api/Callback" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_event&quot;,&#10;&quot;object&quot;: {&#10;&quot;user_id&quot;: 319129839,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;event_id&quot;: &quot;f2045e3f4a79&quot;,&#10;&quot;payload&quot;: {},&#10;&quot;conversation_message_id&quot;: 250&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;10c030beec9d3cd2c1880ed87eb45f1f3bc7b5a6&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/api/Callback" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_event&quot;,&#10;&quot;object&quot;: {&#10;&quot;user_id&quot;: 319129839,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;event_id&quot;: &quot;ad688beebe69&quot;,&#10;&quot;payload&quot;: &quot;&quot;,&#10;&quot;conversation_message_id&quot;: 248&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;810463fa7bab1fcdb04f36d2ba8fe3ad74641a77&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/api/Callback" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;type&quot;: &quot;message_new&quot;,&#10;&quot;object&quot;: {&#10;&quot;message&quot;: {&#10;&quot;date&quot;: 1613169061,&#10;&quot;from_id&quot;: 319129839,&#10;&quot;id&quot;: 129,&#10;&quot;out&quot;: 0,&#10;&quot;peer_id&quot;: 319129839,&#10;&quot;text&quot;: &quot;/zoom предметы&quot;,&#10;&quot;conversation_message_id&quot;: 107,&#10;&quot;fwd_messages&quot;: [],&#10;&quot;important&quot;: false,&#10;&quot;random_id&quot;: 0,&#10;&quot;attachments&quot;: [],&#10;&quot;is_hidden&quot;: false&#10;},&#10;&quot;client_info&quot;: {&#10;&quot;button_actions&quot;: [&#10;&quot;text&quot;,&#10;&quot;intent_subscribe&quot;,&#10;&quot;intent_unsubscribe&quot;&#10;],&#10;&quot;keyboard&quot;: true,&#10;&quot;inline_keyboard&quot;: false,&#10;&quot;carousel&quot;: false,&#10;&quot;lang_id&quot;: 0&#10;}&#10;},&#10;&quot;group_id&quot;: 202470572,&#10;&quot;event_id&quot;: &quot;3470e3afce7cdded4deecbb209ba3b59922527ef&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="openRunningConfigInTab" value="true" />
+  </component>
+  <component name="RunManager" selected=".NET Project.VKGroupBot">
     <configuration name="VKGroupBot" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/VKGroupBot/bin/Debug/netcoreapp3.1/VKGroupBot.dll" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/VKGroupBot/bin/Debug/net5.0/VKGroupBot.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/VKGroupBot" />
       <option name="PASS_PARENT_ENVS" value="1" />
+      <envs>
+        <env name="vk_response" value="57655c23" />
+        <env name="database_name" value="postgres" />
+        <env name="database_host" value="18.220.84.187" />
+        <env name="vk_token" value="f5396d3b940fa340dfb379c319b7ef95d07e89c6971900d08e6a0a01fef4433e990c37cf444b24a9dbb45" />
+        <env name="database_username" value="postgres" />
+        <env name="database_port" value="5432" />
+        <env name="database_password" value="230602" />
+      </envs>
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
@@ -101,11 +387,28 @@
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
-      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="PROJECT_TFM" value="net5.0" />
       <method v="2">
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="TimeTableTest#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/VKGroupBot/TimeTableTest.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="buttonCheck#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/VKGroupBot/buttonCheck.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue=".NET Project.VKGroupBot" />
+      <item itemvalue="HTTP Request.TimeTableTest#1" />
+      <item itemvalue="HTTP Request.buttonCheck#1" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.buttonCheck#1" />
+        <item itemvalue="HTTP Request.TimeTableTest#1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -123,6 +426,17 @@
       <workItem from="1613036757172" duration="7824000" />
       <workItem from="1613063390432" duration="9000" />
       <workItem from="1613063774189" duration="2236000" />
+      <workItem from="1613068138019" duration="1245000" />
+      <workItem from="1613078344411" duration="872000" />
+      <workItem from="1613120479520" duration="120000" />
+      <workItem from="1613165785422" duration="4525000" />
+      <workItem from="1613205920470" duration="769000" />
+      <workItem from="1613251644254" duration="1875000" />
+      <workItem from="1613396487397" duration="11907000" />
+      <workItem from="1613670671031" duration="66000" />
+      <workItem from="1613729561015" duration="34708000" />
+      <workItem from="1613894818514" duration="1187000" />
+      <workItem from="1613910796634" duration="788000" />
     </task>
     <task id="LOCAL-00001" summary="try to make VK response">
       <created>1612962332816</created>
@@ -222,7 +536,35 @@
       <option name="project" value="LOCAL" />
       <updated>1613066562414</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="postgres connection">
+      <created>1613253087420</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1613253087420</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added simple zoom command">
+      <created>1613407371622</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1613407371622</updated>
+    </task>
+    <task id="LOCAL-00017" summary="First timetable pattern">
+      <created>1613765099246</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1613765099246</updated>
+    </task>
+    <task id="LOCAL-00018" summary="FSM model of timetable">
+      <created>1613818408573</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1613818408573</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +600,10 @@
     <MESSAGE value="try to remove node" />
     <MESSAGE value="try to remove docker" />
     <MESSAGE value="src moved to root" />
-    <option name="LAST_COMMIT_MESSAGE" value="src moved to root" />
+    <MESSAGE value="postgres connection" />
+    <MESSAGE value="Added simple zoom command" />
+    <MESSAGE value="First timetable pattern" />
+    <MESSAGE value="FSM model of timetable" />
+    <option name="LAST_COMMIT_MESSAGE" value="FSM model of timetable" />
   </component>
 </project>

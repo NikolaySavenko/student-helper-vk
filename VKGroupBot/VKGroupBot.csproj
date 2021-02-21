@@ -19,5 +19,6 @@
 
   <ItemGroup>
     <Folder Include="Controllers\MessageEvents" />
+    <Folder Include="Controllers\Message\MessageEvents" />
   </ItemGroup>
 </Project>

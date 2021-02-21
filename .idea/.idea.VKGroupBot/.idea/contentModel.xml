@@ -1,27 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Git_Projects\VKGroupBot" t="IncludeFlat">
+    <e p="C:\Users\Nikolay\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Nikolay\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_VKGroupBot.276249731.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Nikolay\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\Nikolay\AppData\Roaming\JetBrains\Rider2020.3\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\Nikolay\RiderProjects\student-helper-vk" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="VKGroupBot" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="buttonCheck.http" t="Include" />
         <e p="Controllers" t="Include">
           <e p="CallbackController.cs" t="Include" />
+          <e p="CarouselTry.cs" t="Include" />
+          <e p="Message" t="Include">
+            <e p="MessageCommand" t="Include">
+              <e p="ButtonCommands" t="Include">
+                <e p="ButtonPayload.cs" t="Include" />
+                <e p="MessageCommandWithKeyboard.cs" t="Include" />
+                <e p="Timetable" t="Include">
+                  <e p="TimetableCommand.cs" t="Include" />
+                  <e p="TimetableStateMachine" t="Include">
+                    <e p="Interface" t="Include">
+                      <e p="ITimetableFactory.cs" t="Include" />
+                      <e p="ITimeTableMachine.cs" t="Include" />
+                      <e p="ITimetableState.cs" t="Include" />
+                    </e>
+                    <e p="States" t="Include">
+                      <e p="TimeTableDayState.cs" t="Include" />
+                      <e p="TimetableWeekState.cs" t="Include" />
+                    </e>
+                    <e p="TimetableFactory.cs" t="Include" />
+                    <e p="TimetableMachine.cs" t="Include" />
+                    <e p="TimetableState.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="CLICommands" t="Include">
+                <e p="EmptyMessageCommand.cs" t="Include" />
+                <e p="ZoomLinkCommand.cs" t="Include" />
+              </e>
+              <e p="ICommand.cs" t="Include" />
+              <e p="MessageCommand.cs" t="Include" />
+              <e p="MessageCommandFactory.cs" t="Include" />
+              <e p="MessageCommandType.cs" t="Include" />
+            </e>
+            <e p="MessageEvents" t="Include" />
+            <e p="MessageSender" t="Include">
+              <e p="IMessageSender.cs" t="Include" />
+              <e p="MessageSender.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Models" t="Include">
+          <e p="Couple.cs" t="Include" />
+          <e p="Event.cs" t="Include" />
+          <e p="Link.cs" t="Include" />
+          <e p="postgresContext.cs" t="Include" />
+          <e p="Subject.cs" t="Include" />
+          <e p="Teacher.cs" t="Include" />
+          <e p="User.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
+            <e p="net5.0" t="Include">
               <e p="VKGroupBot.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
         <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
         <e p="Startup.cs" t="Include" />
+        <e p="TimeTableTest.http" t="Include" />
         <e p="VKGroupBot.csproj" t="IncludeRecursive" />
       </e>
       <e p="VKGroupBot.sln" t="IncludeFlat" />
     </e>
-    <e p="C:\Users\Nikolay\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Nikolay\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_VKGroupBot.-1611776832.00" t="ExcludeRecursive" />
   </component>
 </project>
