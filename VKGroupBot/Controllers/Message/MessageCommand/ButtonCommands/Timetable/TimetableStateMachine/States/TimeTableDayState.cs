@@ -58,7 +58,7 @@ namespace VKGroupBot.Controllers.TimetableStateMachine.States {
 			var builder = new KeyboardBuilder(false);
 			builder.SetInline();
 			var goBackData = Payload;
-			goBackData.Action = ToString();
+			goBackData.Action = TimetableWeekState.Name;
 
 			var backAction = new MessageKeyboardButtonAction {
 				Type = KeyboardButtonActionType.Callback,
