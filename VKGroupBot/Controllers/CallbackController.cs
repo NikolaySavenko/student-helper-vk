@@ -38,8 +38,7 @@ namespace VKGroupBot.Controllers {
 				}
 				else if (update.Type == GroupUpdateType.MessageNew) {
 					var messageNew = update.MessageNew;
-					var message = messageNew.Message;
-					var command = commandFactory.CreateCommand(message);
+					var command = commandFactory.CreateCommand(messageNew);
 					command.Execute();
 				}
 				else if (update.Type == GroupUpdateType.MessageEvent) {

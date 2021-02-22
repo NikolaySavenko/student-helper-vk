@@ -15,6 +15,10 @@
           <e p="CarouselTry.cs" t="Include" />
           <e p="Message" t="Include">
             <e p="MessageCommand" t="Include">
+              <e p="Attributes" t="Include">
+                <e p="KeyboardDemandAttribute.cs" t="Include" />
+                <e p="KeyboardDemandCheckAttribute.cs" t="Include" />
+              </e>
               <e p="ButtonCommands" t="Include">
                 <e p="ButtonPayload.cs" t="Include" />
                 <e p="MessageCommandWithKeyboard.cs" t="Include" />
@@ -38,6 +42,7 @@
               </e>
               <e p="CLICommands" t="Include">
                 <e p="EmptyMessageCommand.cs" t="Include" />
+                <e p="ErrorMessageCommand.cs" t="Include" />
                 <e p="ZoomLinkCommand.cs" t="Include" />
               </e>
               <e p="ICommand.cs" t="Include" />
